@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Halite Simulator</title>
+    </head>
+    <body>
+        Create:
+
+        <ul class="haliteTools">
+            <li>
+                Clear the canvas:
+        <button id="clearCanvas" type="button">Clear</button>
+            </li>
+            <li>
+                Choose:
+        <button id="choosePlanet" type="button">Planet</button>
+                <button id="chooseShip" type="button">Your Ship</button>
+                <button id="chooseEnemyShip" type="button">Enemy Ship</button>
+            </li>
+            <li>
+                Planet radius:
+        <input id="planetRadius" type="number" value="11" min="2" max="20">
+            </li>
+        </ul>
+        Import: <input id="mapDataIn">
+        <button id="load" type="button">Load</button>
+        <br/>
+        <button id="export" type="button">Export</button>
+        <p id="mapDataOut"></p>
+        <p/>
+        <div id="canvasDiv"></div>
+        <p/>
+        <script type="text/javascript" src="halite-game-map.js"></script>
+        <script type="text/javascript" src="halite-viewer.js"></script>
+        <script type="text/javascript">
+            
+    	 drawingApp.init();
+
+        </script>
+    </body>
+</html>
