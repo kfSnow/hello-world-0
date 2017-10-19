@@ -1,41 +1,54 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Halite Simulator</title>
-    </head>
-    <body>
-        Create:
+<head>
+    <title>Halite Simulator</title>
+</head>
+<body>
+Create:
 
-        <ul class="haliteTools">
-            <li>
-                Clear the canvas:
+<ul class="haliteTools">
+    <li>
+        Clear the canvas:
         <button id="clearCanvas" type="button">Clear</button>
-            </li>
-            <li>
-                Choose:
+    </li>
+    <li>
+        Choose:
         <button id="choosePlanet" type="button">Planet</button>
-                <button id="chooseShip" type="button">Your Ship</button>
-                <button id="chooseEnemyShip" type="button">Enemy Ship</button>
-            </li>
-            <li>
-                Planet radius:
+        <button id="chooseShip" type="button">Your Ship</button>
+        <button id="chooseEnemyShip" type="button">Enemy Ship</button>
+    </li>
+    <li>
+        Planet radius:
         <input id="planetRadius" type="number" value="11" min="2" max="20">
-            </li>
-        </ul>
-        Import: <input id="mapDataIn">
+    </li>
+</ul>
+Import:
+<ul class="haliteTools">
+    <li>
+        Map Data: <input id="mapDataIn">
         <button id="load" type="button">Load</button>
-        <br/>
+    </li>
+    <li>PlayerId: <input id="playerId" type="number" value="0"></li>
+    <li>
+        Map Width: <input id="mapWidth" type="number" value="360">
+        Map Height: <input id="mapHeight" type="number" value="240">
+    </li>
+    <li>
         <button id="export" type="button">Export</button>
+
         <p id="mapDataOut"></p>
-        <p/>
-        <div id="canvasDiv"></div>
-        <p/>
-        <script type="text/javascript" src="halite-game-map.js"></script>
-        <script type="text/javascript" src="halite-viewer.js"></script>
-        <script type="text/javascript">
+    </li>
+    <ul/>
+    <p/>
+    <div id="canvasDiv"></div>
+    <p/>
+    <script type="text/javascript" src="halite-game-map.js"></script>
+    <script type="text/javascript" src="halite-viewer.js"></script>
+    <script type="text/javascript">
             
     	 drawingApp.init();
 
-        </script>
-    </body>
+
+    </script>
+</body>
 </html>
